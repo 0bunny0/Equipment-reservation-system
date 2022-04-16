@@ -1,0 +1,6 @@
+<view class="choose">
+<image class="img1" bindtap="navtostudent" src="/images/choose/xuesheng31.png"/>
+<text class="motto1">我是学生</text>
+<image class="img2" bindtap="navtoteacher" src="/images/choose/jiaoshi41.png"/>
+<text class="motto2">我是老师</text>
+</view>

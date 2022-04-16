@@ -1,0 +1,63 @@
+<view class="page">
+    <view class="page__bd">
+        <view class="weui-search-bar">
+            <view class="weui-search-bar__form">
+                <view class="weui-search-bar__box">
+                    <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+                    <input type="text" class="weui-search-bar__input" placeholder="搜索" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+                    <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+                        <icon type="clear" size="14"></icon>
+                    </view>
+                </view>
+                <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
+                    <icon class="weui-icon-search" type="search" size="14"></icon>
+                    <view class="weui-search-bar__text" bindtap="selectresult">搜索</view>
+                </label>
+            </view>
+            <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
+        </view>
+    </view>
+</view>
+<block wx:if="{{inputShowed}}">
+    <view class="container">
+      <view wx:for="{{shiyanshilist}}" wx:key="_id" wx:for-item="list" wx:for-index="index">
+        <view class="shiyanshi_items">
+          <view class="card" bindtap="toggleBtn" id="{{list._id}}" data-index="{{index}}">
+            <view class="txt {{display.change(list.value)}}">
+              预约状态：{{display.changename(list.value)}}
+              <text>创建时间：{{list.date}} </text>
+            </view>
+            <view class="itm">
+              <text>所借教室：</text> {{list.shiyanshi}}
+            </view>
+             <view class="itm">
+                  <text>借用时间：</text>{{list.outdate}}
+              </view>
+              <view class="itm">
+                  <text>归还时间：</text>{{list.indate}}
+              </view>
+          </view>
+          <view class='down clearfix {{index===id?"":"hidden"}}'>
+            <view>
+              <text>所属班级：</text> {{list.banji}}
+            </view>
+            <view>
+              <text>指导老师：</text> {{list.teacher}}
+            </view>
+            <view>
+              <text>小组成员：</text> {{list.members}}
+            </view>
+            <view>
+            </view>
+            <button disabled="{{display.changebutton(list.value)}}" class='feedBack1' style="height:70rpx;"bindtap="agree" data-index="{{index}}" id="{{list._id}}">同意</button>
+            <button disabled="{{display.changebutton(list.value)}}" class='feedBack2' style="height:70rpx;" bindtap="disagree" data-index="{{index}}" id="{{list._id}}">不同意</button>
+            <button disabled="{{display.changefinish(list.value)}}" class='feedBack3' style="height:70rpx;" bindtap="finish" data-index="{{index}}" id="{{list._id}}">确认归还</button>
+        </view>
+        </view>
+      </view>
+    </view>
+</block>
+  
+<wxs module="display" src="test.wxs" />
+  
+  

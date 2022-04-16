@@ -1,0 +1,173 @@
+/* miniprogram/pages/index/in.wxss */
+page{
+  height: 100%;
+  background-color: rgb(243, 243, 243);  
+}
+.container{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    height: 100%;
+    background-color: rgb(243, 243, 243);
+    font-size: 15px;
+    font-family: NSimSun;
+}
+.form{
+  background-color: white;
+  margin: 40rpx 0;
+  width: 650rpx;
+  border-radius: 25rpx;
+  box-shadow: 0 0 20rpx rgb(150, 147, 147); 
+}
+.unite{
+  height: 100%;
+}
+.title{
+  align-items: center;
+  margin: 20rpx 0;
+  text-align: center;
+  font-size: 27px;
+  font-family:KaiTi	;
+  padding-top: 30rpx;
+}
+
+.divLine{
+ background: rgb(182, 182, 182);
+ margin: 10px 65rpx ;
+ align-items: center;
+ width: 80%;
+ height: 5rpx;
+}
+
+.img{
+  width: 55rpx;
+  height: 55rpx;
+  padding:10rpx 5rpx;
+}
+
+.group{
+  justify-content: center;
+  display: flex;
+  padding: 10rpx 0 ;
+}
+
+.tag{
+  text-align: center;
+  margin-top: 20rpx;
+  padding-bottom: 0;
+  font-size: 30rpx;
+  justify-content: center;
+  font-weight: bold;
+}
+.dline{
+  background: rgb(218, 216, 216);
+  margin: 3rpx 25rpx ;
+  align-items: center;
+  width: 90%;
+  height: 1rpx;
+}
+
+.textarea{
+  padding: 9rpx;
+  margin-top: 15rpx;
+  position: relative;
+  width: 60%;
+  height: 45rpx;
+  font-size: 14px;
+  text-align:left;
+}
+
+.leixing{
+  display: inline-block;
+  width: 33%;
+  text-align: center;
+}
+
+.shuliang{
+  display: inline-block;
+  width: 33%;
+  text-align: center;
+}
+
+.kucun{
+  display: inline-block;
+  width: 33%;
+  text-align: center; 
+}
+
+.lala{
+  background-color: #d2e2e9;
+  padding: 15rpx;
+  font-size: 30rpx;
+  margin: 30rpx 20rpx;
+  font-weight: bold;
+}
+
+text.tag{
+  display: block;
+  border-radius: 14rpx;
+ 
+}
+.time{
+  margin: 20rpx 0 20rpx;
+  color: white;
+}
+.btns{
+  display: flex;
+  margin-top: 30rpx;
+}
+
+.miao{
+  margin: 0rpx 30rpx;
+  font-size: 16px;
+  font-weight: bold;
+}
+.group2{
+  height: 20rpx;
+  width: 200rpx;
+  display: flex;
+  margin: 35rpx 30rpx;
+  padding: 10rpx 0 0 0;
+}
+.feedBack1 {
+  float: left;
+  text-align: center;
+  width:40%;
+  background-color:#49b4e2;
+  border-radius: 25px;
+  margin: 10rpx 50rpx 0 ;
+  font-size: 30rpx;
+  color: white;
+  box-shadow: 0 0 20rpx rgb(214, 211, 211);
+}
+.feedBack2 {
+  float: right;
+  text-align: center;
+  width:40%;
+  background-color: #49b4e2;
+  color: white;
+  border-radius:25px;
+  margin: 10rpx 0rpx 0 ;
+  font-size: 30rpx;
+  box-shadow: 0 0 20rpx rgb(214, 211, 211);
+}
+.feedBack3 {
+  text-align: center;
+  background-color:rgb(46, 177, 46);
+  color: white;
+  width: 95%;
+  border-radius: 10rpx;
+  margin: 50rpx auto ;
+  font-size: 30rpx;
+  box-shadow: 0 0 20rpx rgb(150, 147, 147);
+}
+.tiaokuan{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:0 10rpx;
+}
+.tiaokuan>navigator>P{
+  color: lightskyblue;
+  border-bottom: 1rpx solid lightskyblue
+}

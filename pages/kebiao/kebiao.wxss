@@ -1,0 +1,8 @@
+/* pages/kebiao/kebiao.wxss */
+view{
+  margin-top: 170px;
+  height: 100%;
+}
+image{
+  width: 100%;
+}

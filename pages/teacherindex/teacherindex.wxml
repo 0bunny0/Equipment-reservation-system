@@ -1,0 +1,7 @@
+<!--pages/teacherindex/teacherindex.wxml-->
+<view class="choose">
+<image class="img1" bindtap="navtoshebei" src="/images/choose/camera.png" />
+<text class="motto1">设备预约</text>
+<image class="img2" bindtap="navtoshiyanshi" src="/images/choose/jiaoshi1.png"/>
+<text class="motto2">实验室预约</text>
+</view>

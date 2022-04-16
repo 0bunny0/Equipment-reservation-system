@@ -1,0 +1,77 @@
+
+<form bindsubmit="onSubmitevent">
+ <view class="container">
+  <view class="form">
+
+    <view class="title">
+     <text>实验室申请表</text>
+     <view class="divLine"></view>
+    </view>
+
+    <view class="message">
+     <view class="group">
+       <image class="img" src="/images/banji.png"></image>
+       <text class="tag">所属班级:</text>
+       <textarea name="banji" class="textarea" placeholder="填写班级"> 
+       </textarea>
+      </view>
+      <view class="dline"></view>
+
+  <view class="group">
+      <image class="img" src="/images/chengyuan.png"></image>
+      <text class="tag">小组成员:</text>
+      <textarea name="members" class="textarea" placeholder="填写成员以及学号"> 
+      </textarea>
+  </view>
+  <view class="dline"></view>
+  
+  
+
+  <view class="group">
+      <image class="img" src="/images/teacher.png"></image>
+      <text class="tag">指导老师:</text>
+      <textarea name="teacher" class="textarea" placeholder="填写指导老师"> 
+      </textarea>
+  </view>
+  <view class="dline1"></view>
+ </view>
+  
+<view class="test2">
+  <test2 bindchange="change" name="shiyanshi"></test2>
+</view>
+ 
+
+  <view class="divLine"></view>
+
+  <view class="group2">
+  <image class="img" src="/images/shijian.png"></image>
+  <text class="tag">预约时间:</text>
+  </view>
+
+  <view class="group1">
+   
+      <pickerYMDHM placeholder = "{{placeholder}}" date = "{{outdate}}" disabled = "{{disabled}}" bind:onPickerChange="onPickerChangeoutdate">
+      </pickerYMDHM>
+  
+      <text style="text-align:center;padding:20px 5px;font-weight: bold;color:black;">至</text>
+   
+     <pickerYMDHM placeholder = "{{placeholder1}}" date = "{{indate}}" disabled = "{{disabled}}" bind:onPickerChange="onPickerChangeindate">
+      </pickerYMDHM>
+   
+  </view>
+
+
+    
+
+    </view>
+    <view class="tiaokuan">
+    <view class="tiaokuan_chk">
+      <checkbox-group bindchange="changechecked">
+        <checkbox value="{{tiaokuanchecked}}" checked="{{tiaokuanchecked}}"></checkbox> 
+      </checkbox-group>
+    </view>
+    <navigator url="../tiaokuan/tiaokuan" class="tiaokuan_nav">已同意数字媒体实验室<p>借用条例</p></navigator>
+</view>
+    <button formType="submit" class='feedBack'><text>确认</text></button>
+ </view>
+</form>

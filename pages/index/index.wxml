@@ -1,0 +1,84 @@
+<!--miniprogram/pages/index/in.wxml-->
+<form bindsubmit="onSubmitevent">
+ <view class="container">
+  <view class="unite">
+  <view class="form">
+
+    <view class="title">
+     <text>设备申请表</text>
+     <view class="divLine"></view>
+    </view>
+
+  <view class="message">
+    <view class="group" style="border-top: 0px solid red">
+      <image class="img" src="/images/banji.png"></image>
+      <text class="tag">所属班级:</text>
+      <textarea name="banji" class="textarea" placeholder="填写班级"> 
+      </textarea>
+  </view>
+  <view class="dline"></view>
+
+  <view class="group">
+      <image class="img" src="/images/chengyuan.png"></image>
+      <text class="tag">小组成员:</text>
+      <textarea name="members" class="textarea" placeholder="填写成员以及学号"> 
+      </textarea>
+  </view>
+  <view class="dline"></view>
+  
+  
+
+  <view class="group" style="border-bottom:2px solid #e4e4e4;">
+      <image class="img" src="/images/teacher.png"></image>
+      <text class="tag">指导老师:</text>
+      <textarea name="teacher" class="textarea" placeholder="填写指导老师"> 
+      </textarea>
+  </view>
+ </view>
+  
+
+    <view class="lala">
+      <text class="leixing">类型</text>
+      <text class="shuliang">数量</text>
+      <text class="kucun">当前库存</text>
+    </view>
+
+  <test1 class="shebei" wx:for="{{number}}" wx:key="*this" pickerIndex='{{item}}' name="shebei" bindchange="change" ></test1>
+    <view class="btns">
+      <button bindtap="increase" class='feedBack1'><text>添加设备</text></button>
+      <button bindtap="reduce" class='feedBack2'><text>删除设备</text></button>
+    </view>
+
+  <view class="divLine"></view>
+  
+  <view class="group2">
+  <image class="img" src="/images/shijian.png"></image>
+  <text class="tag">预约时间:</text>
+  </view>
+  <view class="group">
+   <view class="time">
+      <pickerYMDHM placeholder = "{{placeholder}}" date = "{{outdate}}" disabled = "{{disabled}}" bind:onPickerChange="onPickerChangeoutdate">
+      </pickerYMDHM>
+   </view>
+      <text style="text-align:center;padding:20px 5px;font-weight: bold;">至</text>
+   <view class="time">
+     <pickerYMDHM placeholder = "{{placeholder1}}" date = "{{indate}}" disabled = "{{disabled}}" bind:onPickerChange="onPickerChangeindate">
+      </pickerYMDHM>
+   </view>
+  </view>
+
+
+    
+</view>
+<view class="tiaokuan">
+    <view class="tiaokuan_chk">
+      <checkbox-group bindchange="changechecked">
+        <checkbox value="{{tiaokuanchecked}}" checked="{{tiaokuanchecked}}"></checkbox> 
+      </checkbox-group>
+    </view>
+    <navigator url="../tiaokuan/tiaokuan" class="tiaokuan_nav">已同意数字媒体实验室<p>借用条例</p></navigator>
+</view>
+ <button formType="submit" class='feedBack3'><text>确认</text></button>
+ </view>
+ </view>
+</form>

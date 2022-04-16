@@ -1,0 +1,49 @@
+var filter = {
+  change: function (value) {
+    if (value === 0) return ""
+    else if (value === 1) return "agree"
+    else if (value === 2) return "disagree"
+    else if (value === 3) return "finish"
+  },
+  changename: function (value) {
+    if (value === 0) return "正在处理"
+    else if (value === 1) return "已同意"
+    else if (value === 2) return "不同意"
+    else if (value === 3) return "已完成"
+  },
+  changebutton: function (value) {
+    if (value === 0) return false
+    else if (value === 1 || value === 2) return true
+    else if (value === 3) return true
+  },
+  changefinish: function (value) {
+    if (value === 0) return true
+    else if (value === 1) return false
+    else if (value === 2) return true
+    else if (value === 3) return true
+  },
+  displayloading:function(value){
+    if(value===0) return false
+    else return true
+  },
+  displayagree:function(value){
+    if(value===1) return false
+    else return true
+  },
+  displayall:function(value){
+    if(value===2) return false
+    else if(value===3) return false
+    else return true
+  },
+  displayplaying:function(value){
+    if(value===0) return false
+    else if(value===1) return false
+    else return true
+  },
+  displayhistroy:function(value){
+    if(value===2) return false
+    else if(value===3) return false
+    else return true
+  }
+};
+module.exports = filter

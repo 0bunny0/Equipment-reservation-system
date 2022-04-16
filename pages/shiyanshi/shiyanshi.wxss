@@ -1,0 +1,140 @@
+/* miniprogram/pages/index/in.wxss */
+page{
+  height: 100%;
+  background-color: rgb(243, 243, 243);    
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgb(243, 243, 243);
+    font-size: 15px;
+    margin: 0rpx auto;
+    font-family: NSimSun;
+    padding: 10rpx 0;
+}
+.form{
+  margin-bottom: 0;
+  background-color: white;
+  width: 650rpx;
+  border-radius: 25rpx;
+  box-shadow: 0 0 20rpx rgb(150, 147, 147);
+  padding-bottom: 20rpx;  
+}
+.title{
+  align-items: center;
+  margin: 20rpx 0;
+  text-align: center;
+  font-size: 27px;
+  font-family:KaiTi	;
+   padding-top: 30rpx;
+}
+
+.divLine{
+ background: rgb(182, 182, 182);
+ margin: 10px 65rpx ;
+ align-items: center;
+ width: 80%;
+ height: 5rpx;
+}
+
+.img{
+  width: 55rpx;
+  height: 55rpx;
+  padding:10rpx 5rpx;
+}
+
+.group{
+  justify-content: center;
+  display: flex;
+  padding: 10rpx 0 ;
+  margin: 15rpx 0;
+}
+
+.tag{
+  text-align: center;
+  margin-top: 20rpx;
+  padding-bottom: 0;
+  font-size: 30rpx;
+  justify-content: center;
+  font-weight: bold;
+}
+.dline{
+  background: rgb(218, 216, 216);
+  margin: 0rpx 25rpx ;
+  align-items: center;
+  width: 90%;
+  height: 1rpx;
+}
+
+.dline1{
+  background: rgb(182, 182, 182);
+  margin: 5rpx 0;
+  align-items: center;
+  width: 100%;
+  height: 5rpx;
+}
+
+.textarea{
+  padding: 9rpx;
+  margin-top: 15rpx;
+  position: relative;
+  width: 60%;
+  height: 40rpx;
+  font-size: 14px;
+  text-align:left;
+}
+
+
+text.tag{
+  display: block;
+  border-radius: 14rpx;
+ 
+}
+
+.miao{
+  float: left;
+  margin: 0rpx 30rpx;
+  font-size: 16px;
+  font-weight: bold;
+  display: column;
+}
+.group1{
+  color: white;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding: 10rpx 0 ;
+  margin: 20rpx auto;
+}
+
+.group2{
+  height: 20rpx;
+  width: 200rpx;
+  display: flex;
+  margin: 10rpx 30rpx 0;
+  padding: 10rpx 0 0 0;
+}
+
+.feedBack {
+  text-align: center;
+  background-color:rgb(46, 177, 46);
+  color: white;
+  width: 90%;
+  border-radius: 10rpx;
+  margin: 5rpx auto 0 ;
+  font-size: 30rpx;
+  box-shadow: 0 0 20rpx rgb(150, 147, 147);
+}
+.tiaokuan{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:  10rpx;
+}
+.tiaokuan>navigator>P{
+  color: lightskyblue;
+  border-bottom: 1rpx solid lightskyblue
+}

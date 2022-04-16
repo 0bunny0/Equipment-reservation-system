@@ -1,0 +1,75 @@
+<view class="page">
+    <view class="page__bd">
+        <view class="weui-search-bar">
+            <view class="weui-search-bar__form">
+                <view class="weui-search-bar__box">
+                    <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+                    <input type="text" class="weui-search-bar__input" placeholder="搜索" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+                    <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+                        <icon type="clear" size="14"></icon>
+                    </view>
+                </view>
+                <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
+                    <icon class="weui-icon-search" type="search" size="14"></icon>
+                    <view class="weui-search-bar__text" bindtap="selectresult">搜索</view>
+                </label>
+            </view>
+            <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
+        </view>
+    </view>
+</view>
+<block wx:if="{{inputShowed}}">
+    <view class="container">
+      <view wx:for="{{shebeilist}}" wx:key="_id" wx:for-item="list">
+        <view class="shebei_items">
+          <view class="card" bindtap="toggleBtn" id="{{list._id}}" data-index="{{index}}">
+            <view class="txt {{display.change(list.value)}}">
+              预约状态：{{display.changename(list.value)}}
+              <text>创建时间：{{list.date}} </text>
+            </view>
+            <view style="display:flex;">
+              <text>所借设备</text>
+              <text>数量</text>
+            </view>
+            <view wx:for="{{list.shebei}}" wx:key="name" style="display:flex;border-bottom: 1px solid #dbdbdb;">
+              <view style="width:50%;padding:7rpx 100rpx 10rpx;font-size:25rpx;">
+                {{item.name}}
+              </view>
+              <view style="width:50%;padding:7rpx 75rpx;font-size:25rpx;">
+                {{item.nums}}
+              </view>
+            </view>
+          </view>
+          <view class='down clearfix {{index===id?"":"hidden"}}'>
+            <view>
+              <text>所属班级：</text> {{list.banji}}
+            </view>
+            <view>
+              <text>指导老师：</text> {{list.teacher}}
+            </view>
+            <view>
+              <text>小组成员：</text> {{list.members}}
+            </view>
+            <view>
+              <text>借出时间：</text> {{list.outdate}}
+            </view>
+            <view>
+              <text>归还时间：</text> {{list.indate}}
+            </view>
+            <button disabled="{{display.changebutton(list.value)}}" class='feedBack1' style="height:70rpx;"bindtap="agree" data-index="{{index}}" id="{{list._id}}">同意</button>
+            <button disabled="{{display.changebutton(list.value)}}" class='feedBack2' style="height:70rpx;" bindtap="disagree" data-index="{{index}}" id="{{list._id}}">不同意</button>
+            <button disabled="{{display.changefinish(list.value)}}" class='feedBack3' style="height:70rpx;" bindtap="finish" data-index="{{index}}" id="{{list._id}}">确认归还</button>
+          </view>
+        </view>
+          </view>
+    </view>
+</block>
+  
+<wxs module="display" src="test.wxs" />
+  
+  
+  
+  
+
+
+ 

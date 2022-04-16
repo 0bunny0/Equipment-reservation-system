@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "Tabstop":"../../components/Tabstop/Tabs"
+  },
+  "navigationBarTitleText": "实验室借用",
+  "backgroundTextStyle": "dark",
+  "enablePullDownRefresh": true
+}

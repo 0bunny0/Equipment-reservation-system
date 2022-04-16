@@ -1,0 +1,17 @@
+
+.tabs_title{
+    width: 100%;
+    height: 80rpx;
+    display: flex;
+    border-bottom: 1rpx solid #cccccc;
+}
+.title_item{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.isactive{
+    color: #428bca;
+    border-bottom: 1rpx solid #428bca;
+}

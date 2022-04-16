@@ -1,0 +1,11 @@
+<!--pages/teacherlogin/techerlogin.wxml-->
+<view class="container">
+ <view class="box">
+  <form bindsubmit="onSubmitevent">
+   <view class="a">
+     <input class="b" placeholder="请输入密码"  name="inputpassword"></input>
+   </view>
+   <button form-type="submit">确认</button>
+  </form>
+  </view>
+</view>

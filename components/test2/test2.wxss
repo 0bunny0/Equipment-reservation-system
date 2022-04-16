@@ -1,0 +1,21 @@
+/* components/test2/test2.wxss */
+.picker{
+  text-align: center;
+  justify-content: center;
+  height: 100rpx;
+  width: 70%;
+  display: inline-block;
+  position: relative;
+  margin-top: 20rpx auto;
+  background-color: #49b4e2;
+  border-radius: 20rpx;
+  font-weight: bold;
+  color: white;
+  box-shadow: 0 0 20rpx rgb(214, 211, 211);
+}
+view{
+  text-align: center;
+  justify-content: center;
+  margin:30rpx auto;
+  
+}

@@ -1,0 +1,79 @@
+/* miniprogram/demo/demo.wxss */
+.container{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(243, 243, 243);
+}
+.img {
+  margin-top:15rpx;
+  height:400rpx;
+  width: 600rpx;
+  border-radius: 5%;
+  overflow: hidden;
+  transform: translateY(0);
+}
+.img swiper-item {
+  margin-top:15rpx;
+  height:400rpx;
+  width: 600rpx;
+  border-radius: 5%;
+}
+.moto-container{
+  margin-top: 70rpx;
+  width:600rpx;
+  height:300rpx;
+  border-radius:20rpx;
+  background-color: white;
+  box-shadow: 10rpx 10rpx 20rpx rgb(206, 204, 204);
+}
+.moto-container image{
+  width: 70rpx;
+  height: 70rpx;
+  float: left;
+  padding-top: 10rpx;
+
+}
+.moto-container button{
+  padding: 10rpx 0;
+  border-radius: 15rpx;
+  border-style: none;
+  background-color: white;
+  padding-left: 40rpx;
+}
+.moto-container view{
+  font-size: 30rpx;
+  float: left;
+  margin-left: 20rpx;
+  margin-top: 10rpx;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.moto-container1{
+  margin-top: 70rpx;
+  width:600rpx;
+  height:200rpx;
+  border-radius:20rpx;
+  background-color: white;
+  box-shadow: 10rpx 10rpx 20rpx rgb(206, 204, 204);
+}
+.moto-container1 image{
+  width: 70rpx;
+  height: 70rpx;
+  float: left;
+  padding-top: 10rpx;
+}
+.moto-container1 button{
+    padding: 10rpx 0;
+  border-radius: 20rpx;
+  border-style: none;
+  background-color: white;
+  padding-left: 40rpx;
+}
+.moto-container1 view{
+  font-size: 30rpx;
+  float: left;
+  margin-left: 20rpx;
+  margin-top: 10rpx;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}

@@ -1,0 +1,28 @@
+<import src="/template/template.wxml"/>
+<view class="container">
+ <swiper class="img" autoplay indicator-dots circular>
+   <swiper-item >
+    <image src="/images/choose/1.jpg" />
+   </swiper-item>
+   <swiper-item >
+    <image src="/images/choose/2.jpg" />
+   </swiper-item>
+   <swiper-item >
+    <image src="/images/choose/3.jpg" />
+   </swiper-item>
+ </swiper>
+   
+  <view class="moto-container">
+   <template is="tem" data="{{...item1}}"/>
+   <template is="tem" data="{{...item2}}"/>
+   <template is="tem" data="{{...item3}}"/>
+  </view>
+ <view class="moto-container1">
+  <template is="tem" data="{{...item4}}"/>
+  <template is="tem" data="{{...item5}}"/>
+ </view>
+ 
+</view>
+  
+    
+

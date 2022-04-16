@@ -1,0 +1,246 @@
+{
+  "cloudfunctionRoot": "cloudfunction/",
+  "description": "项目配置文件",
+  "packOptions": {
+    "ignore": []
+  },
+  "setting": {
+    "urlCheck": true,
+    "scopeDataCheck": false,
+    "coverView": true,
+    "es6": false,
+    "postcss": true,
+    "compileHotReLoad": false,
+    "lazyloadPlaceholderEnable": false,
+    "preloadBackgroundData": false,
+    "minified": true,
+    "autoAudits": false,
+    "newFeature": false,
+    "uglifyFileName": false,
+    "uploadWithSourceMap": true,
+    "useIsolateContext": false,
+    "nodeModules": false,
+    "enhance": true,
+    "useMultiFrameRuntime": false,
+    "useApiHook": false,
+    "useApiHostProcess": false,
+    "showShadowRootInWxmlPanel": true,
+    "packNpmManually": false,
+    "packNpmRelationList": [],
+    "minifyWXSS": true,
+    "disableUseStrict": false,
+    "ignoreUploadUnusedFiles": true
+  },
+  "compileType": "miniprogram",
+  "libVersion": "2.9.4",
+  "projectname": "%E5%AE%9E%E9%AA%8C%E5%AE%A4%E5%B0%8F%E7%A8%8B%E5%BA%8F",
+  "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
+  "debugOptions": {
+    "hidedInDevtools": []
+  },
+  "scripts": {},
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "condition": {
+    "search": {
+      "list": []
+    },
+    "conversation": {
+      "list": []
+    },
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "id": -1,
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/test/test",
+          "pathName": "pages/test/test",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/teacherlogin/techerlogin",
+          "pathName": "pages/teacherlogin/techerlogin",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/teachershiyanshi/teachershiyanshi",
+          "pathName": "pages/shiyanshi/shiyanshi",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/teacherindex/teacherindex",
+          "pathName": "pages/teacherindex/teacherindex",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/shebei/test",
+          "pathName": "pages/shebei/test",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/shiyanshi/shiyanshi",
+          "pathName": "pages/shiyanshi/shiyanshi",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "components/test2/test2",
+          "pathName": "components/test2/test2",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/studentindex/studentindex",
+          "pathName": "pages/studentindex/studentindex",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/choose-list/choose-list",
+          "pathName": "pages/choose-list/choose-list",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/kebiao/kebiao",
+          "pathName": "pages/kebiao/kebiao",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/tiaokuan/tiaokuan",
+          "pathName": "pages/tiaokuan/tiaokuan",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "components/test1/test1",
+          "pathName": "components/test1/test1",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/choose/choose",
+          "pathName": "pages/choose/choose",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/shebei/test",
+          "pathName": "pages/shebei/test",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "components/test1/test1",
+          "pathName": "components/test1/test1",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/myappointment/la",
+          "pathName": "pages/myappointment/la",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/shebei/test",
+          "pathName": "pages/shebei/test",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/shiyanshi/shiyanshi",
+          "pathName": "pages/shiyanshi/shiyanshi",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/teachershiyanshi/teachershiyanshi",
+          "pathName": "pages/teachershiyanshi/teachershiyanshi",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/tiaokuan/tiaokuan",
+          "pathName": "pages/tiaokuan/tiaokuan",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/search/search",
+          "pathName": "pages/search/search",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/shebeisearch/shebeisearch",
+          "pathName": "pages/shebeisearch/shebeisearch",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/studentindex/studentindex",
+          "pathName": "pages/studentindex/studentindex",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/teacherindex/teacherindex",
+          "pathName": "pages/teacherindex/teacherindex",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

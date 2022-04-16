@@ -1,0 +1,6 @@
+<template name="tem">
+ <button style="width:600rpx;height:100rpx;" bindtap="{{functio}}">
+  <image src="{{img}}"></image>
+   <view>{{name}}</view>
+   </button>
+</template>

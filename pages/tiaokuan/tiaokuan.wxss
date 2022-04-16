@@ -1,0 +1,29 @@
+/* pages/tiaokuan/tiaokuan.wxss */
+.txt{
+  border-top: 2px solid #e4e4e4;
+  border-bottom: 2px solid #e4e4e4;
+  margin: 20rpx 20rpx;
+}
+.txt view{
+  padding: 10rpx;
+}
+.moto-container{
+  padding: 20rpx 10rpx;
+  margin: 0 auto 50rpx;
+  width:650rpx;
+  height:100%;
+  border-radius:20rpx;
+  background-color: white;
+  box-shadow: 10rpx 10rpx 20rpx rgb(206, 204, 204);
+}
+.container{
+  padding-top: 50rpx;
+    display: column;
+    align-items: center;
+    height: 100%;
+    background-color: rgb(243, 243, 243);
+    flex-direction:column;
+}
+.btn{
+  margin: 10rpx auto;
+}

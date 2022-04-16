@@ -1,0 +1,25 @@
+{
+  "pages": [
+    "pages/choose/choose",
+    "pages/index/index",
+    "pages/shebeisearch/shebeisearch",
+    "pages/shiyanshisearch/shiyanshisearch",    
+    "pages/shebei/test",
+    "pages/teacherlogin/teacherlogin",
+    "pages/teacherindex/teacherindex",
+    "pages/shiyanshi/shiyanshi",
+    "pages/teachershiyanshi/teachershiyanshi",
+    "pages/studentindex/studentindex",
+    "pages/kebiao/kebiao",
+    "pages/tiaokuan/tiaokuan",
+    "pages/myappointment/la"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "数字传媒实验中心移动预约系统",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

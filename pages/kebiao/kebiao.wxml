@@ -1,0 +1,4 @@
+<!--pages/kebiao/kebiao.wxml-->
+<view>
+<image src="{{imgUrl}}" bindtap='clickImg'></image>
+</view>

@@ -1,0 +1,29 @@
+/* pages/teacherlogin/techerlogin.wxss */
+.container{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(243, 243, 243);
+}
+.box{
+  align-items: center;
+  height: 500rpx;
+  margin: 300rpx 25rpx;
+  background-color: white;
+  box-shadow: 10rpx 10rpx 20rpx rgb(206, 204, 204);
+  border-radius: 25rpx;
+}
+.a{
+  margin: 70px 70rpx 50rpx;
+  text-align: center;
+
+}
+.b{
+  margin: 10px;
+}
+button{
+  margin: 10px;
+  color: white;
+ background-color: rgb(26, 150, 207);
+}

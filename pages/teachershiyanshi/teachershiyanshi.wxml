@@ -1,0 +1,149 @@
+<!--pages/teachershiyanshi/teachershiyanshi.wxml-->
+<navigator url="../shiyanshisearch/shiyanshisearch" class="page">
+    <view class="page__bd">
+        <view class="weui-search-bar">
+            <view class="weui-search-bar__form">
+                <view class="weui-search-bar__box">
+                    <input type="text" class="weui-search-bar__input" placeholder="搜索" />
+                </view>
+                <label class="weui-search-bar__label">
+                    <icon class="weui-icon-search" type="search" size="14"></icon>
+                    <view class="weui-search-bar__text" >搜索</view>
+                </label>
+            </view>
+        </view>
+    </view>
+</navigator>
+<Tabstop Tabs="{{Tabs}}"  bindchangevalue="changeValue" bindchangecontent="changeContent" >
+     <block wx:if="{{Tabs[0].value}}">
+        <view class="container">
+            <view  wx:for="{{list}}" wx:for-item="list" wx:key="_id">
+                    <view class="class-items" hidden="{{display.displayloading(list.value)}}">
+                            <view class="card" bindtap="toggleBtn" id="{{list._id}}" data-index="{{index}}">
+                                <view class="txt {{display.change(list.value)}}" >
+                                    预约状态：{{display.changename(list.value)}}
+                                    <text>创建时间：{{list.date}} </text>
+                                      
+                                </view>
+                  <view class="itm">
+                    <text>所借教室：</text>
+                    {{list.shiyanshi}}
+                </view>
+                <view class="itm">
+                    <text>借用时间：</text>
+                    {{list.outdate}}
+                    </view>
+                    <view class="itm">
+                    <text>归还时间：</text>
+                    {{list.indate}}
+                    </view>
+            </view>
+
+            <view class='down clearfix {{index===id?"":"hidden"}}'>
+                    <view>
+                       <text>所属班级：</text>
+                        {{list.banji}}
+                     </view>
+                    <view>
+                        <text>指导老师：</text>
+                        {{list.teacher}}
+                    </view>
+                    <view>
+                        <text>小组成员：</text>
+                        {{list.members}}
+                    </view>
+                                <button disabled="{{display.changebutton(list.value)}}" class='feedBack1' style="height:70rpx;"bindtap="agree" data-index="{{index}}" id="{{list._id}}">同意</button>
+                                <button disabled="{{display.changebutton(list.value)}}" class='feedBack2' style="height:70rpx;" bindtap="disagree" data-index="{{index}}" id="{{list._id}}">不同意</button>
+                            </view>
+                </view>
+            </view>
+        </view>
+    </block>
+
+    <block wx:if="{{Tabs[1].value}}">
+        <view class="container">
+            <view  wx:for="{{list}}" wx:for-item="list" wx:key="_id">
+                    <view class="class-items" hidden="{{display.displayagree(list.value)}}">
+                            <view class="card" bindtap="toggleBtn" id="{{list._id}}" data-index="{{index}}">
+                                <view class="txt {{display.change(list.value)}}" >
+                                    预约状态：{{display.changename(list.value)}}
+                                    <text>创建时间：{{list.date}} </text>
+                                </view>
+                               <view class="itm">
+                                <text>所借教室：</text>
+                                {{list.shiyanshi}}
+                    
+                                <view class="itm">
+                                    <text>借用时间：</text>
+                                    {{list.indate}}
+                                    </view>
+                                    <view class="itm">
+                                    <text>归还时间：</text>
+                                    {{list.outdate}}
+                                    </view>
+                            </view>
+                            <view class='down clearfix {{index===id?"":"hidden"}}'>
+                                  <view>
+                                    <text>所属班级：</text>
+                                      {{list.banji}}
+                                  </view>
+                                  <view>
+                                      <text>指导老师：</text>
+                                      {{list.teacher}}
+                                  </view>
+                                  <view>
+                                      <text>小组成员：</text>
+                                      {{list.members}}
+                                  </view>
+                                              <button disabled="{{display.changefinish(list.value)}}" class='feedBack3' style="height:70rpx;" bindtap="finish" data-index="{{index}}" id="{{list._id}}">确认归还</button>
+                                          </view>
+                    </view>
+               </view>
+            </view>
+        </view>
+    </block>
+
+     <block wx:if="{{Tabs[2].value}}">
+        <view class="container">
+            <view  wx:for="{{list}}" wx:for-item="list" wx:key="_id">
+                    <view class="class-items" hidden="{{display.displayall(list.value)}}">
+                            <view class="card" bindtap="toggleBtn" id="{{list._id}}" data-index="{{index}}">
+                                <view class="txt {{display.change(list.value)}}" >
+                                    预约状态：{{display.changename(list.value)}}
+                                    <text>创建时间：{{list.date}} </text>
+                                </view>
+                               <view class="itm">
+                    <text>所借教室：</text>
+                    {{list.shiyanshi}}
+                </view>
+                <view class="itm">
+                    <text>借用时间：</text>
+                    {{list.indate}}
+                    </view>
+                    <view class="itm">
+                    <text>归还时间：</text>
+                    {{list.outdate}}
+                    </view>
+            </view>
+
+            <view class='down clearfix {{index===id?"":"hidden"}}'>
+                    <view>
+                       <text>所属班级：</text>
+                        {{list.banji}}
+                     </view>
+                    <view>
+                        <text>指导老师：</text>
+                        {{list.teacher}}
+                    </view>
+                    <view>
+                        <text>小组成员：</text>
+                        {{list.members}}
+                    </view>
+                            </view>
+                </view>
+            </view>
+        </view>
+    </block>
+
+</Tabstop>
+<wxs module="display" src="test.wxs" />

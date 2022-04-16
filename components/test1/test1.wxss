@@ -1,0 +1,29 @@
+/* components/test1/test1.wxss */
+
+.picker{
+  height: 150rpx;
+  width: 33%;
+  display: inline-block;
+  position: relative;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+}
+.choose{
+  margin: 10px;
+  border-bottom: 2px solid #e4e4e4;
+  text-align: center;
+}
+.number{
+  margin: 10px;
+  border-bottom: 2px solid #e4e4e4;
+  text-align: center;
+}
+
+.kucun{
+  width: 33%;
+  display: inline-block;
+  position: relative;
+  margin-bottom: -12rpx;
+  border-bottom: 2px solid #e4e4e4;
+  text-align: center;
+}

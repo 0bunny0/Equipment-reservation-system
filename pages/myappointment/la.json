@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "Tabstop":"../../components/Tabstop/Tabs"
+  },
+  "navigationBarTitleText": "我的预约",
+  "backgroundTextStyle": "dark",
+  "enablePullDownRefresh": true
+}
